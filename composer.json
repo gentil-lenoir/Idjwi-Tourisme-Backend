@@ -1,0 +1,19 @@
+{
+    "name": "gentil_le_noi-r/idjwi-tourisme-back-end",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "GentilLeNoiR\\IdjwiTourismeBackEnd\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gentil le noir",
+            "email": "gentillenoir075@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.10",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
