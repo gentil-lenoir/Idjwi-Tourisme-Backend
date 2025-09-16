@@ -21,7 +21,6 @@ CREATE TABLE temoignages (
     email VARCHAR(150),
     contenu TEXT NOT NULL,
     note TINYINT CHECK (note BETWEEN 1 AND 5),
-    statut ENUM('en_attente','publie','rejete') DEFAULT 'en_attente',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

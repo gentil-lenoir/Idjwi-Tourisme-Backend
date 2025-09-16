@@ -1,7 +1,9 @@
 <?php
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
 
 header('Access-Control-Allow-Headers: content-type');
 header('Content-Type: application/json');
@@ -20,14 +22,13 @@ require_once '../db/config.php';
 // Récupérer les données JSON
 $raw = file_get_contents('php://input');
 $data = json_decode($raw, true);
-file_put_contents('raw.txt', $raw);
-file_put_contents('debug.txt', print_r($data, true));
 
-// Vérifier que $data est bien un tableau
-if (!is_array($data)) {
-    echo json_encode(['success' => false, 'message' => 'Erreur: données JSON invalides.']);
-    exit;
-}
+
+// // Vérifier que $data est bien un tableau
+// if (!is_array($data)) {
+//     echo json_encode(['success' => false, 'message' => 'Erreur: données JSON invalides.']);
+//     exit;
+// }
 
 // Extraction des champs avec valeurs par défaut
 $name = trim($data['name'] ?? '');
