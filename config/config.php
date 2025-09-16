@@ -6,7 +6,7 @@ define('CONFIG', [
     'DB_NAME' => 'idjwi_tourisme',
     'DB_USER' => 'root',
     'DB_PASS' => '',
-    'APP_URL' => 'http://localhost:3000',
+    'APP_URL' => 'https://idjwi-tourisme.vercel.app',
 ]);
 
 ?>

@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 header('Access-Control-Allow-Headers: content-type');
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: http://localhost:3000');
+header('Access-Control-Allow-Origin: https://idjwi-tourisme.vercel.app/');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 
 // Gérer la requête OPTIONS (préflight CORS)
