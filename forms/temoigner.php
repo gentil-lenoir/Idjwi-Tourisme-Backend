@@ -21,9 +21,6 @@ $raw = file_get_contents('php://input');
 $data = json_decode($raw, true);
 
 
-file_put_contents('datas.txt', $data);
-file_put_contents('raw_input.txt', $raw);
-
 $data = json_decode($raw, true);
 
 if (json_last_error() !== JSON_ERROR_NONE) {
